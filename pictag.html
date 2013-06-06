@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Picture Tagging</title>
+
+	<link href="pictag.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="pictag.js"></script>
+</head><body>
+
+	<div class="ptg_main">
+		<div class="ptg_content" onmousemove="javascript: ptg_move();">
+			<form name="ptgform" onsubmit="javascript: ptg_add(); return false;">
+			
+			<div class="ptgpictc" id="ptgptc">
+				<div class="ptgpictcb" onclick="javascript: ptg_splist();">View Tagged People</div>
+				<div class="ptgpictcb">Remove Tag</div>
+				<div class="ptgpictcb">Start Tagging</div>
+			</div>
+			
+			<div class="ptgbox" id="ptgg1">
+				<div class="ptgboxtop"></div>
+				<div class="ptgboxtext" id="ptgg1c">Lin Hun</div>
+			</div>
+			<img src="kp.jpg" id="ptgimg"/>
+			
+			<div style='visibility: hidden;'><input type="submit" id="submit" name="addtag"/></div>
+
+			</form>
+		</div>
+		
+		<div id="ptgplist"></div>
+		
+		<a href="javascript: ptg_init(0.5);">"Half"</a>
+		<a href="javascript: ptg_init(1);">"Full"</a>
+		<a href="javascript: ptg_init(2);">"Double"</a>
+	
+	</div>
+
+</body></html> 
