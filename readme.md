@@ -7,6 +7,10 @@ A simple JavaScript photo tagging and tag management program.
 Click on the photo to tag a person, removal of the tags came be done by pressing
 remove button on the tag list below the photo.
 
+##Screenshot
+
+![Screenshot](/img/sc.png)
+
 
 Credits: 
 
